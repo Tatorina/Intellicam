@@ -2,9 +2,8 @@ const upBtn = document.querySelector('._next')
 const downBtn = document.querySelector('._prev')
 const sidebar = document.querySelector('.slider__list')
 const container = document.querySelector('.slider__column')
-const slidesCount = sidebar.querySelectorAll('div').length
+const slidesCount = sidebar.querySelectorAll('.slider__column').length
 
-let activeSlideIndex = 0
 
 
 document.addEventListener('keydown', 
@@ -16,10 +15,6 @@ document.addEventListener('keydown',
 	}
 })
 
-
-
-
-
 upBtn.addEventListener('click', () => {
 	changeSlide('right')
 })
@@ -30,23 +25,13 @@ downBtn.addEventListener('click', () => {
 
 function changeSlide(direction) {
 	if (direction === 'right') {
-		activeSlideIndex++
-		if (activeSlideIndex === slidesCount) {
-			activeSlideIndex = 0
- 		}
-		
+    let first = document.querySelector('.slider__column')
+    first.remove()
+    sidebar.append(first)
 	} else if (direction === 'left') {
-		activeSlideIndex--
-		if (activeSlideIndex < 0) {
-			activeSlideIndex = slidesCount - 1
-		}
-			
+      let el = document.querySelectorAll('.slider__column')
+      let last = el[el.length-1]
+      last.remove()
+      sidebar.prepend(last)
 }
-	
-	const width = container.clientWidth
-  console.log(width)
-	
-  sidebar.style.transform = `translateX(-${activeSlideIndex * width}px)`
-	
-
 }
