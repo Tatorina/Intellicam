@@ -158,6 +158,15 @@
   z-index: 2;
 }
 
+.page__features {
+  position: relative;
+
+}
+
+.page__setup {
+  position: relative;
+  margin-top: 100px;
+}
 /*-------------------------------------------------------------------------------------------*/
 /*------------MAIN BLOCK---------------------------------------------------------------------*/
 
@@ -240,6 +249,12 @@
   cursor: pointer;
 }
 
+._black--container{
+  position: relative;
+  background: #141527;
+  padding-left: 180px;
+  margin: 0 0 0 -69px;
+}
 /*-----------SOLUTIONS-----------------------------------------------------------------------*/
 
 
@@ -414,15 +429,9 @@
 
 /*-------------PRODUCTS------------------------------------------------------------------------------------------*/
 
-
-
 .products__container {
-  
-  height: 464px;
-  position: relative;
-  left: -69px;
-  background: #141527;
   padding: 60px 0 0 180px;
+  height: 464px;
 }
 
 .products__decoration {
@@ -535,5 +544,105 @@
   margin-left: 24px;
 }
 
-._text {
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*------------- FEATURES-----------------------------------------------------------------------------------------*/
+
+.features__container {
+  margin: 215px 0 0 69px;
+  width: inherit;
+  height: 390px;
+  background: #FFF;
+  padding: 55px 0 0 99px;
+}
+
+.features__decoration {
+}
+
+.features__title {
+  font-size: 28px;
+  margin-top: 30px;
+}
+
+.features__services {
+  display: flex;
+  margin-top: 46px;
+}
+
+.sevices__column {
+  width: 244px;
+
+}
+.sevices__column:not(:last-child){
+  margin-right: 84px;
+}
+
+.services__item {
+}
+
+.services__title {
+  margin-top: 19.91px;
+  font-weight: 600;
+  font-size: 17.3473px;
+  line-height: 133%;
+}
+
+.services__text {
+  margin-top: 6.5px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  width: 198px;
+  color: #070B2E;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*-------------EASY SETUP----------------------------------------------------------------------------------------*/
+
+.setup__container {
+  
+  padding-top: 55px;
+}
+
+.setup__decoration {
+  color: #fff;
+}
+
+.setup__title {
+  margin-top: 30px;
+  font-size: 28px;
+  line-height: 123%;
+   color: #FFFFFF;
+}
+
+.setup__services {
+  margin-top: 68px;
+  display: flex;
+}
+
+.sevices__column {
+  width: 136px;
+}
+
+.sevices__column:not(:last-child){
+  margin-right: 170px;
+}
+
+.services__number {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #4BA7FC;
+  position: relative;
+  top: 20px;
+  left: -6px;
+  color: #fff;
+  text-align: center;
+}
+
+.services__item {
+}
+
+.services__text {
 }
