@@ -167,6 +167,17 @@
   position: relative;
   margin-top: 100px;
 }
+
+.page__forbes {
+  position: relative;
+  margin-top: 151px;
+}
+
+.page__developers {
+  position: relative;
+  margin-top: 100px;
+}
+
 /*-------------------------------------------------------------------------------------------*/
 /*------------MAIN BLOCK---------------------------------------------------------------------*/
 
@@ -283,7 +294,6 @@
   top: 589px;
   background: #FFFFFF;
   padding: 180px 0 0 111px;
-  /*overflow: hidden;*/
 }
 
 
@@ -601,7 +611,7 @@
 /*-------------EASY SETUP----------------------------------------------------------------------------------------*/
 
 .setup__container {
-  
+  height: 383px;
   padding-top: 55px;
 }
 
@@ -621,7 +631,7 @@
   display: flex;
 }
 
-.sevices__column {
+.setup .sevices__column {
   width: 136px;
 }
 
@@ -644,5 +654,212 @@
 .services__item {
 }
 
-.services__text {
+.services__number--value {
+  position: relative;
+  display: block;
+  top: 7px;
 }
+
+.setup .services__text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 23px;
+  color: #FFFFFF;
+  width: 142px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*-------------FORBES--------------------------------------------------------------------------------------------*/
+
+
+.forbes {
+}
+
+.forbes__image {
+  position: absolute;
+  left: 180px;
+  margin: -51px 0 0 -111px;
+}
+
+.forbes__container {
+  background: #FFFFFF;
+  padding: 39px 0 0 521px;
+  margin: 0 0 0 111px;
+  height: 365px;
+  width: 100%;
+}
+
+.forbes__body {
+  width: 387px;
+}
+
+.forbes__logo {
+  margin-bottom: 30px;
+}
+
+.forbes__title {
+  width: 375px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 123%;
+  color: #0F1337;
+}
+
+.forbes__text {
+  margin: 16px 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 123%;
+  color: #141527;
+}
+
+.forbes__block--btn {
+  display: flex;
+}
+
+.forbes__active {
+  min-width: 62px;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 123%;
+  text-decoration-line: underline;
+  color: #093CBD;
+
+}
+
+.forbes .slider__buttons {
+  margin-left: 407px;
+  float: left;
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*-------------DEVELOPERS----------------------------------------------------------------------------------------*/
+
+.developers__container {
+  padding: 40px 0 0 180px;
+  
+}
+
+.developers__decoration {
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.developers__title {
+  font-size: 28px;
+  line-height: 123%;
+  color: #FFFFFF;
+}
+
+.developer__body--container{
+  display: flex;
+}
+
+.developers__body {
+  width: 343px;
+  margin: 96px 0 0;
+}
+
+.developers__body--title {
+  line-height: 123%;
+  color: #FFFFFF;
+  margin-bottom: 6px;
+}
+
+.developers__body--text {
+  font-size: 16px;
+  line-height: 123%;
+  color: #FFFFFF;
+  opacity: 0.5
+}
+
+.developers__button {
+  margin-top: 142px;
+  background: #fff;
+  color: #141527;
+}
+
+.developers__code {
+  margin-left: 193px;
+  margin-top: 30px;
+}
+
+.developers__code--lang {
+}
+
+.developers__list--lang {
+  display: flex;
+  margin: 0px 0 15px 357px;
+  
+}
+
+.developers__lang {
+}
+
+.developers__lang-item {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  cursor: pointer;
+  font-feature-settings: 'salt' on, 'liga' off;
+  color: #FFFFFF;
+}
+
+.developers__lang-item:active{
+  text-decoration-line: underline;
+}
+
+.developers__lang-item.active{
+  text-decoration-line: underline;
+}
+
+.developers__lang:not(:last-child) {
+  margin-right: 20px;
+}
+
+.developers__scroll--block {
+  height: 301px;
+  width: 546px;
+  background:  #1A2747;
+  overflow-y: auto;
+  scroll-snap-type: y;
+  padding: 15px 55px 16px 18px;
+  
+}
+
+.developers__scroll--block::-webkit-scrollbar {
+  width: 7px;
+  background-color: #1A2747;
+
+}
+
+.developers__scroll--block::-webkit-scrollbar-thumb {
+  border-radius: 14%;
+  background-color: #141527;
+  scroll-margin-right: 8px;
+}
+
+.developers__scroll--block::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  background-color: #1A2747;
+}
+
+.scroll__text{
+  width: 95%;
+  height: 600px;
+  
+}
+
+.scroll--text{
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 123%;
+  color: #FFFFFF;
+  
+}
+

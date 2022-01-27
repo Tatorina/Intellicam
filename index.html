@@ -233,42 +233,278 @@
           
         </div>
       </article>
-      <article class="page__setup _container">
+      <article class="page__setup setup _container">
         <div class="setup__container _black--container ">
           <div class="setup__decoration _decoration"></div>
           <div class="setup__title _title">Easy Setup</div>
           <div class="setup__services services">
             <div class="sevices__column">
               <a href="#">
-                <div class="services__number">1</div>
+                <div class="services__number">
+                  <h3 class="services__number--value">1</h3>
+                </div>
                 <img src="img/easy setup/Component 1.svg" alt="img" class="services__item">
               </a>
               <div class="services__text">Install the intellicam on-premise app</div>
             </div>
             <div class="sevices__column">
               <a href="#">
-                <div class="services__number">2</div>
+                <div class="services__number">
+                  <h3 class="services__number--value">2</h3>
+                </div>
                 <img src="img/easy setup/Component 2.svg" alt="img" class="services__item">
               </a>
               <div class="services__text">Connect CCTV cameras to the app</div>
             </div>
             <div class="sevices__column">
               <a href="#">
-                <div class="services__number">3</div>
+                <div class="services__number">
+                  <h3 class="services__number--value">3</h3>
+                </div>
                 <img src="img/easy setup/Component 3.svg" alt="img" class="services__item">
               </a>
               <div class="services__text">Get real-time alerts for SOP Violations</div>
             </div>
             <div class="sevices__column">
               <a href="#">
-                <div class="services__number">4</div>
+                <div class="services__number">
+                  <h3 class="services__number--value">4</h3>
+                </div>
                 <img src="img/easy setup/Component 4.svg" alt="img" class="services__item">
               </a>
               <div class="services__text">Ensure workspace Safety and Hygiene</div>
             </div>
           </div>
-
-    
+        </div>
+      </article>
+      <article class="page__forbes forbes _container">
+        <img src="img/forbes/image.png" alt="image" class="forbes__image">
+        <div class="forbes__container ">
+          <div class="forbes__body">
+            <img src="img/forbes/forbes.png" alt="forbes" class="forbes__logo">
+            <div class="forbes__title _title">The Best Way to Avoid Data Leaks and Privacy Scandals: Don't Own Consumer Data</div>
+            <div class="forbes__text _text">“These are companies, like intellicam, that are actually working to get our data onto personal servers so we own it, not the companies”</div>
+            <div class="forbes__block--btn">
+              <a href="" class="forbes__active">Read Article</a>
+              <div class="slider__buttons _sbtns">
+                <div class="slider__button _border _sbtn slider__control _prev" >
+                  <img class="arrow" src="img/solutions/Left Arrow.svg" alt="arrow">
+                </div>
+                <div class="slider__button _sbtn _fill slider__control _next">
+                  <img src="img/solutions/Right Arrow.svg" alt="arrow">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="page__developers developers _container">
+        <div class="developers__container _black--container">
+          <div class="developers__decoration _decoration"></div>
+          <div class="developers__title _title">Developers</div>
+          <section class="developer__body--container">
+            <section class="developers__body">
+              <div class="developers__body--title _title">Built for developers from the ground up</div>
+              <div class="developers__body--text _text">Get started with 1,000 free operations each month. Request a free API key and start building today.</div>
+              <a href="#" class="developers__button _btn">Get your free API key</a>
+            </section>
+            <section class="developers__code">
+              <nav class="developers__code--lang">
+                <ul class="developers__list--lang">
+                  <li class="developers__lang">
+                    <div href="" class="developers__lang-item">
+                      Phython
+                    </div>
+                  </li>
+                  <li class="developers__lang">
+                    <div href="" class="developers__lang-item">
+                      Node
+                    </div>
+                  </li>
+                  <li class="developers__lang">
+                    <div href="" class="developers__lang-item">
+                      Java
+                    </div>
+                  </li>
+                  <li class="developers__lang">
+                    <div href="" class="developers__lang-item">
+                      Curl
+                    </div>
+                  </li>
+                </ul>
+              </nav>
+              <div class="developers__scroll--block">
+                <ul>
+                  <li class="developers__scroll--text">
+                    <pre class="scroll--text"id="1" style="display: none;">
+response = stub.PostModelOutputs(
+  service_pb2.PostModelOutputsRequest(
+      model_id="{THE_MODEL_ID}",
+      inputs=[
+        resources_pb2.Input(
+          data=resources_pb2.Data(
+            image=resources_pb2.Image(
+              url="https://samples.clarifai.com/metro-north.jpg"
+            )
+          )
+        )
+      ]
+    ),
+    metadata=metadata
+)
+print("Predicted concepts:")
+for concept in response.outputs[0].data.concepts:
+print(concept.name + " " + str(concept.value))
+response = stub.PostModelOutputs(
+  service_pb2.PostModelOutputsRequest(
+      model_id="{THE_MODEL_ID}",
+      inputs=[
+        resources_pb2.Input(
+          data=resources_pb2.Data(
+            image=resources_pb2.Image(
+              url="https://samples.clarifai.com/metro-north.jpg"
+            )
+          )
+        )
+      ]
+    ),
+    metadata=metadata
+)
+print("Predicted concepts:")
+for concept in response.outputs[0].data.concepts:
+print(concept.name + " " + str(concept.value))
+                    </pre>
+                  </li>
+                  <li class="developers__scroll--text">
+                    <pre class="scroll--text"id="2" style="display: none;">
+    node code
+node = stub.PostModelOutputs(
+  node_pb2.PostModelOutputsRequest(
+      node="{THE_MODEL_ID}",
+      node=[
+        resources_pb2.Input(
+          data=resources_pb2.Data(
+            image=resources_pb2.Image(
+              url="https://samples.clarifai.com/metro-north.jpg"
+            )
+          )
+        )
+      ]
+    ),
+    metadata=metadata
+)
+print("Predicted concepts:")
+for concept in response.outputs[0].data.concepts:
+print(concept.name + " " + str(concept.value))
+response = stub.PostModelOutputs(
+  service_pb2.PostModelOutputsRequest(
+      model_id="{THE_MODEL_ID}",
+      inputs=[
+        resources_pb2.Input(
+          data=resources_pb2.Data(
+            image=resources_pb2.Image(
+              url="https://samples.clarifai.com/metro-north.jpg"
+            )
+          )
+        )
+      ]
+    ),
+    metadata=metadata
+)
+print("Predicted concepts:")
+for concept in response.outputs[0].data.concepts:
+print(concept.name + " " + str(concept.value))
+                    </pre>
+                  </li>
+                  <li class="developers__scroll--text">
+                    <pre class="scroll--text"id="3" style="display: none;">
+    java code
+java = stub.PostModelOutputs(
+  java.PostModelOutputsRequest(
+      java="{THE_MODEL_ID}",
+      java=[
+        resources_pb2.Input(
+          data=resources_pb2.Data(
+            image=resources_pb2.Image(
+              url="https://samples.clarifai.com/metro-north.jpg"
+            )
+          )
+        )
+      ]
+    ),
+    metadata=metadata
+)
+print("Predicted concepts:")
+for concept in response.outputs[0].data.concepts:
+print(concept.name + " " + str(concept.value))
+response = stub.PostModelOutputs(
+  service_pb2.PostModelOutputsRequest(
+      model_id="{THE_MODEL_ID}",
+      inputs=[
+        resources_pb2.Input(
+          data=resources_pb2.Data(
+            image=resources_pb2.Image(
+              url="https://samples.clarifai.com/metro-north.jpg"
+            )
+          )
+        )
+      ]
+    ),
+    metadata=metadata
+)
+print("Predicted concepts:")
+for concept in response.outputs[0].data.concepts:
+print(concept.name + " " + str(concept.value))
+                    </pre>
+                  </li>
+                  <li class="developers__scroll--text">
+                    <pre class="scroll--text" id="box4" style="display: none;">
+    curl code
+curl = stub.PostModelOutputs(
+  curl.PostModelOutputsRequest(S
+      curl="{THE_MODEL_ID}",
+      curl=[
+        resources_pb2.Input(
+          data=resources_pb2.Data(
+            image=resources_pb2.Image(
+              url="https://samples.clarifai.com/metro-north.jpg"
+            )
+          )
+        )
+      ]
+    ),
+    metadata=metadata
+)
+print("Predicted concepts:")
+for concept in response.outputs[0].data.concepts:
+print(concept.name + " " + str(concept.value))
+response = stub.PostModelOutputs(
+  service_pb2.PostModelOutputsRequest(
+      model_id="{THE_MODEL_ID}",
+      inputs=[
+        resources_pb2.Input(
+          data=resources_pb2.Data(
+            image=resources_pb2.Image(
+              url="https://samples.clarifai.com/metro-north.jpg"
+            )
+          )
+        )
+      ]
+    ),
+    metadata=metadata
+)
+print("Predicted concepts:")
+for concept in response.outputs[0].data.concepts:
+print(concept.name + " " + str(concept.value))
+                    </pre>
+                  </li>
+                </ul>
+                  
+                </div>
+              </div>
+            </section>
+          </section>
+          
         </div>
       </article>
     </main>
@@ -276,6 +512,7 @@
     </div>
   </div>
   <script src="app.js"></script>
+  <script src="lang.js"></script>
 </body>
 
 </html>
